@@ -1,0 +1,87 @@
+            /* Specific styling to About Page-Flexible layout using flex */ 
+            /* body{
+                box-sizing: border-box;
+            } */
+            .img_17{
+                grid-area: img17 ;
+            }
+            .img_18{
+                grid-area: img18 ;
+            }
+                   
+            .img_1{
+                grid-area: img1 ;
+            }
+            .img_2{
+                grid-area: img2 ;
+            }
+          
+            
+            .img_4{
+                grid-area: img4 ;
+            }
+            .img_9{
+                grid-area: img9 ;
+            }
+            
+            .img_12{
+                grid-area: img12 ;
+            } 
+          
+            .img_23{
+                grid-area: img23 ;
+            } 
+                   
+            
+        
+.F_container{
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+.F_container>img{
+  /* max-width: 100%; */
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+
+.F_container>img:hover{
+  box-shadow: 0 0 32px #333;
+  transform: scale(1.025);      
+}
+
+
+
+
+.F_container{
+   
+    padding: 10px 10px;
+    background-color: cadetblue;
+    display:grid;
+    width: 90%;
+    height:100%;
+    margin: 1em auto; 
+    grid-template-areas:
+    "img1 img1 img1 img2 img2 img2"
+    "img1 img1 img1 img2 img2 img2"
+    "img17 img17 img17 img18 img18 img18"
+    "img17 img17 img17 img18 img18 img18"
+    "img17 img17 img17 img18 img18 img18"
+    "img4 img4 img4 img9 img9 img9"
+    "img4 img4 img4 img9 img9 img9"
+    "img4 img4 img4 img9 img9 img9"
+    "img12 img12 img12 img23 img23 img23"
+    "img12 img12 img12 img23 img23 img23"
+    "img12 img12 img12 img23 img23 img23"
+         ". . . . . .";
+    gap: 10px;
+}
+.F_container>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+     display: block;  
+}
+
+
