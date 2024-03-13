@@ -1,4 +1,4 @@
-LinkedIn Post:
+FOTOLAND LANDING PAGE
 
 👨‍💻 **Project Submission: Fotoland Landing Page**
 
