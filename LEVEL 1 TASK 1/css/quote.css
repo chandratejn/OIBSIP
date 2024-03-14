@@ -1,0 +1,145 @@
+
+
+
+/* Importing fonts using font-face rule */
+@font-face {
+    font-family: mainNav_Head_Font;
+    src: url("Pacifica Condensed Regular.otf");
+    }
+ @font-face {
+    font-family: Lombok_Font;
+    src: url("Lombok\ Regular.ttf");
+    }
+ @font-face {
+    font-family: Oneday_Font;
+    src: url("ONEDAY.otf");
+    }
+ @font-face {
+    font-family: avalea_Font;
+    src: url("AVALEA_.otf");
+    }
+ @font-face {
+    font-family: ghostoutline_Font;
+    src: url("GhostlikeDemoOutline.ttf");
+    }
+ @font-face {
+    font-family: ghostregular_Font;
+    src: url("GhostlikeDemoRegular.ttf");
+    }
+ @font-face {
+    font-family: patrickHandregular_Font;
+    src: url("patrick_hand_by_sirpatrick1st-d30hjvk.otf");
+    }
+ 
+ 
+       
+    /* font-family: mainNav_Head_Font; */
+    /* font-family: patrickHandregular_Font; */
+    /* font-family: Lombok_Font; */
+    /* font-family: Oneday_Font; */
+    /* font-family: avalea_Font; */
+    /* font-family: ghostoutline_Font; */
+    /* font-family: ghostregular_Font;  */
+/* section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: #111;
+} */
+
+.F_card{
+    --color: #ff88a6;
+    --border-size: 1rem;
+    --bg-color: #252525;
+    position: relative;
+    background-color: var(--bg-color);
+    min-width: 280px;
+    margin: 2rem;
+    border-radius: var(--border-size);
+    color:white;
+    display: grid;
+    place-content: center;
+    padding: 3rem 2rem;
+    isolation: isolate;
+    overflow: hidden;
+
+}
+
+.F_card::before,.F_card::after{
+    content:"";
+    position: absolute;
+
+}
+
+.F_card::before{
+    width: 200%;
+    height: 200%;
+    background-image: conic-gradient(var(--color) 0deg,
+    transparent 60deg,
+    transparent 180deg,
+    var(--color) 180deg,
+    transparent 240deg);
+    inset:-50%;
+    z-index: -2;
+    animation: border 8s linear infinite;
+}
+
+.F_card.F_card:hover::before{
+    animation-play-state: paused;
+}
+@keyframes border{
+    to{
+        transform:rotateZ(-360deg);
+    }
+}
+
+.F_card::after{
+    --inset: 0.25rem;
+    background-color: #111;
+    inset: var(--inset);
+    border-radius: calc(var(--border-size)- var(--inset));
+    z-index: -1;
+    transition: all0.35s linear;
+
+}
+
+.F_card:hover::after{
+background-color: var(--bg-color);
+}
+
+.F_card i{
+    font-size: 2rem ;
+    margin-inline: auto;
+    color: transparent;
+    -webkit-text-stroke: thin var(--color) ;
+
+}
+
+.F_card:hover i{
+    color: var(--color);
+    -webkit-text-stroke-width: 0;
+}
+
+.F_card .title{
+     font-family: mainNav_Head_Font; 
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-block: 2.5rem 1.5rem;
+    color: var(--color);
+
+}
+
+.F_card .details ul li{
+    font-family: patrickHandregular_Font;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+
+

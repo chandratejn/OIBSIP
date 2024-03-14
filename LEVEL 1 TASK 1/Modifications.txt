@@ -1,0 +1,18 @@
+Step 1. I want to add glassmorphism and parallax effect to this landing page. I will provide you the html and css.Go through it first.
+2. I want the images with class - background_img to be set as background image to that particular section where it is present.So it can be used for parallax scrolling effect.
+3.To that background images add a glassmorphism effect.
+4.The logo or text content or forms in that particular section needs to be comes over the background image. 
+5.Start implementing parallax scrolling effect.
+
+
+I want the elements with id's home,about,services,quote, to be in the foreground. Where as the respective images with class background_img to be in the background.
+
+
+Now i need to center the foreground elements in the following way:
+
+.logo_container to be centered with respect to its background image 5.jpg
+
+.SmallIntro to be to be set to the right end corner and in the center with respect to its background image 3.jpg
+
+.F_Services to be centered with respect to its background image 14.jpg
+
