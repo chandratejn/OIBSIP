@@ -1,6 +1,7 @@
 
 📝 **Project Report**
 
+** NOTE:** USED SOME EXISTING TEMPLATES FROM THE WEB AS MY CODE BASE AND MODIFIED THEM TO MY REQUIREMENTS!
 **🌟 Project Title:** Portfolio Project
 
 **📋 Overview:** The project aimed to create a comprehensive portfolio showcasing my skills and experiences in photography, graphic design, and web development. It involved designing and developing a responsive website that highlights my expertise, projects, and contact information.
